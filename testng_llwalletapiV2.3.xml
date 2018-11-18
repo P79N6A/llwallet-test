@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+ 
+<suite name="Default suite">
+  <test name="Default test" preserve-order="true">
+   <classes>
+      	<class name="com.llwallet.interfaces.test.api.test.personal.BalancePwdPayTest"/>
+   		<class name="com.llwallet.interfaces.test.api.test.personal.BankCardPrepay1Test"/>
+      	<class name="com.llwallet.interfaces.test.api.test.personal.CombinePayTest"/>
+      	<class name="com.llwallet.interfaces.test.api.test.personal.SpayApplyTest"/>
+      	<class name="com.llwallet.interfaces.test.api.test.personal.Balance2OtherBankCardTest"/>
+      	<class name="com.llwallet.interfaces.test.api.test.personal.TraderPaymentTest"/>   		
+   </classes> 
+ </test>
+</suite>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:context="http://www.springframework.org/schema/context"
+        xmlns:dubbo="http://code.alibabatech.com/schema/dubbo" xmlns="http://www.springframework.org/schema/beans"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://code.alibabatech.com/schema/dubbo
+        http://code.alibabatech.com/schema/dubbo/dubbo.xsd
+        ">
+        <!--dubbo接口 -->  
+        <dubbo:application name="test_john_consumer"/>  
+        <dubbo:registry id="commonRegistry" protocol="zookeeper" address="192.168.110.22:2181"/>  
+        <dubbo:monitor protocol="registry"/>
+        <!-- 连连钱包服务 -->  
+        <import resource="classpath:context/dubbo-llwallet.xml"/> 
+        <!-- 钱包记账系统 -->  
+        <import resource="classpath:context/dubbo-llwalletacct.xml"/>
+        
+
+</beans>

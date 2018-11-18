@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+ 
+<suite name="Default suite">
+  <test name="Default test" preserve-order="true">
+   <classes>    
+       	<!--     -->
+      	<class name="com.llwallet.interfaces.test.dubbo.cashoutbusiservice.QueryCashOutTimesTest"/>
+      	<class name="com.llwallet.interfaces.test.dubbo.cashoutbusiservice.UpdateCashOutTimesTest"/>
+ 
+      	<class name="com.llwallet.interfaces.test.dubbo.balancepaybusiservice.QueryWalletBalancePayLimitTest"/>
+      	<class name="com.llwallet.interfaces.test.dubbo.balancepaybusiservice.UpdateWalletBalancePayLimitTest"/>
+
+      	<class name="com.llwallet.interfaces.test.dubbo.transferaccountbusiservice.QueryTranseferAccountsLimitTest"/>
+      	<class name="com.llwallet.interfaces.test.dubbo.transferaccountbusiservice.UpdateTransferAccountsLimitTest"/>
+
+      	<class name="com.llwallet.interfaces.test.dubbo.bankcardpayservice.QueryWalletBankCardPayTypeTest"/>
+
+      	<class name="com.llwallet.interfaces.test.dubbo.rechargebusiservice.QueryOnlineBankRechargeLimitedTest"/>
+      	<class name="com.llwallet.interfaces.test.dubbo.rechargebusiservice.UpdateOnlineBankRechargeLimitedTest"/>
+      	<class name="com.llwallet.interfaces.test.dubbo.rechargebusiservice.QueryRechargeLimitedTest"/>
+      	<class name="com.llwallet.interfaces.test.dubbo.rechargebusiservice.UpdateRechargeLimitedTest"/>
+
+      	<class name="com.llwallet.interfaces.test.dubbo.userbusiqueryservice.QueryUserBusiAmtTest"/>
+      	
+      	<class name="com.llwallet.interfaces.test.dubbo.coreservice.GetWalletUserInfoTest"/>
+      	<class name="com.llwallet.interfaces.test.dubbo.coreservice.QueryKYCTest"/>
+      	<class name="com.llwallet.interfaces.test.dubbo.coreservice.TrustAuthTest"/>
+      	<class name="com.llwallet.interfaces.test.dubbo.coreservice.UpdateKYCTest"/>
+
+   </classes> 
+ </test>
+</suite>

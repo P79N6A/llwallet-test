@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+ 
+<suite name="Default suite">
+  <test name="Default test" preserve-order="true">
+   <classes>
+        <!-- -->
+      	<class name="com.llwallet.interfaces.test.api.test.personal.BalancePwdPayTest"/>
+      	<class name="com.llwallet.interfaces.test.api.test.personal.BalancePayVerifyTest"/>
+   		
+      	<class name="com.llwallet.interfaces.test.api.test.personal.BankCardPrepay1Test"/>
+      	<class name="com.llwallet.interfaces.test.api.test.personal.BankCardPayTest"/>
+      	<class name="com.llwallet.interfaces.test.api.test.personal.BankCardSharePrepayTest"/>
+      	
+      	<class name="com.llwallet.interfaces.test.api.test.personal.CombinePayTest"/>
+      	
+        <class name="com.llwallet.interfaces.test.api.test.personal.SecuredPrepayModifyTest"/>
+      	<class name="com.llwallet.interfaces.test.api.test.personal.SecuredPayConfirmTest"/>
+      	<class name="com.llwallet.interfaces.test.api.test.personal.SecuredPayQueryTest"/>
+      	      	
+      	<class name="com.llwallet.interfaces.test.api.test.personal.CashoutApplyTest"/>
+        <class name="com.llwallet.interfaces.test.api.test.personal.CashoutT1ApplyTest"/>
+      	<class name="com.llwallet.interfaces.test.api.test.personal.CashoutNowApplyTest"/>
+      	<class name="com.llwallet.interfaces.test.api.test.personal.CashoutCombineApplyTest"/>
+      	<class name="com.llwallet.interfaces.test.api.test.enterprise.UnitCashOutTest"/>
+      	<class name="com.llwallet.interfaces.test.api.test.enterprise.UnitCashoutT1ApplyTest"/>
+      	<class name="com.llwallet.interfaces.test.api.test.enterprise.UnitCashoutNowApplyTest"/>
+   		
+   		<class name="com.llwallet.interfaces.test.api.test.personal.BankCardOpenAuthTest"/>
+   		<class name="com.llwallet.interfaces.test.api.test.personal.BankCardAuthVerfyTest"/>
+   		<class name="com.llwallet.interfaces.test.api.test.personal.UserBankCardTest"/>
+   		<class name="com.llwallet.interfaces.test.api.test.personal.BankCardUnbindTest"/>
+
+   		<class name="com.llwallet.interfaces.test.api.test.enterprise.OpenUnitUserTest"/>
+   		<class name="com.llwallet.interfaces.test.api.test.enterprise.UploadUnitPhotoTest"/>
+   		<class name="com.llwallet.interfaces.test.api.test.enterprise.SingleUserQueryTest"/>
+   		<class name="com.llwallet.interfaces.test.api.test.enterprise.ModifyUnitUserTest"/>
+   		<class name="com.llwallet.interfaces.test.api.test.enterprise.ModifyUnitUserAcctTest"/>
+   		
+   		<class name="com.llwallet.interfaces.test.api.test.personal.DirectOpenUserTest"/>
+   		<class name="com.llwallet.interfaces.test.api.test.personal.UploadCardPhotoTest"/>   
+   		<class name="com.llwallet.interfaces.test.api.test.personal.SingleUserQueryTest"/>
+   		<class name="com.llwallet.interfaces.test.api.test.personal.ModifyUserInfoTest"/>
+   		<class name="com.llwallet.interfaces.test.api.test.personal.ModifyBaseUserInfoTest"/>   		
+   		
+  		<class name="com.llwallet.interfaces.test.api.test.personal.UserRefundTest"/>
+  		
+  		<class name="com.llwallet.interfaces.test.api.test.personal.TraderPaymentTest"/>
+  		<class name="com.llwallet.interfaces.test.api.test.personal.TraderUserPaymentTest"/>   		
+   		
+   </classes> 
+ </test>
+</suite>

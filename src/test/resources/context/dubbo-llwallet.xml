@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo" xsi:schemaLocation="http://www.springframework.org/schema/beans         http://www.springframework.org/schema/beans/spring-beans.xsd         http://code.alibabatech.com/schema/dubbo         http://code.alibabatech.com/schema/dubbo/dubbo.xsd         ">  
+  <!-- 连连钱包处理核心服务 -->  
+  <dubbo:reference registry="commonRegistry" id="llwalletCoreService" interface="com.yintong.llwallet.service.ILLWalletCoreService" timeout="30000" check="false"/>  
+  <!-- 钱包业务查询 -->  
+  <dubbo:reference registry="commonRegistry" id="walletUserBusiQueryService" interface="com.yintong.llwallet.service.ILLWalletUserBusiQueryService" timeout="30000" check="false" retries="0"/>  
+  <!-- 钱包余额消费业务控制接口 -->  
+  <dubbo:reference registry="commonRegistry" id="walletBalancePayBusiService" interface="com.yintong.llwallet.service.IWalletBalancePayBusiService" timeout="30000" check="false"/>  
+  <!-- 银行卡支付业务控制接口 -->  
+  <dubbo:reference registry="commonRegistry" id="walletBankCardPayService" interface="com.yintong.llwallet.service.IWalletBankCardPayService" timeout="30000" check="false" retries="0"/>  
+  <!-- 钱包提现业务控制接口-->  
+  <dubbo:reference registry="commonRegistry" id="walletCashOutBusiService" interface="com.yintong.llwallet.service.IWalletCashOutBusiService" timeout="30000" check="false"/>  
+  <!-- 钱包充值业务控制中心 -->  
+  <dubbo:reference registry="commonRegistry" id="walletRechargeBusiService" interface="com.yintong.llwallet.service.IWalletRechargeBusiService" timeout="30000" check="false"/>  
+  <!-- 钱包转账业务控制接口 -->  
+  <dubbo:reference registry="commonRegistry" id="walletTransferAccountsBusiService" interface="com.yintong.llwallet.service.IWalletTransferAccountsBusiService" timeout="30000" check="false"/> 
+  
+  <!-- 担保退款接口 -->  
+  <dubbo:reference registry="commonRegistry" id="refundService" interface="com.lianpay.gateway.refund.dubbo.service.IRefundService" timeout="30000" check="false"/> 
+  
+  <!-- 支付查询接口 -->  
+  <dubbo:reference registry="commonRegistry" id="payQueryService" interface="com.lianpay.publics.dubbo.service.IPayQueryService" timeout="30000" check="false"/> 
+  
+  <dubbo:reference id="aesCryptService" interface="com.lianlian.crypt.service.IAESCryptService" timeout="50000" />
+  
+  <!-- 支付结果异步回调 --> 
+  <dubbo:reference id="paymentResultNotifyService" interface="com.lianpay.chnl.service.notify.PaymentResultNotifyService" timeout="50000" />
+  
+</beans>

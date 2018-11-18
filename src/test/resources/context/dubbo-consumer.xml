@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:dubbo="http://code.alibabatech.com/schema/dubbo" xmlns="http://www.springframework.org/schema/beans"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://code.alibabatech.com/schema/dubbo
+        http://code.alibabatech.com/schema/dubbo/dubbo.xsd
+        ">
+	<!--dubbo接口 -->
+	<dubbo:application name="test_john_consumer" />
+	<dubbo:registry id="commonRegistry" protocol="zookeeper"
+		address="192.168.110.22:2181" />
+	<dubbo:monitor protocol="registry" />
+	<!-- 连连钱包服务 -->
+	<import resource="classpath:context/dubbo-llwallet.xml" />
+	<!-- 钱包记账系统 -->
+	<import resource="classpath:context/dubbo-llwalletacct.xml" />
+
+	<!--dubbo接口 -->
+	<dubbo:reference id="consumptionThroughQueryUserService"
+		interface="com.lianpay.tpay.busi.service.ConsumptionThroughQueryUserService"
+		timeout="30000" check="false" retries="0" />
+	<dubbo:reference id="consumptionThroughOpenAccountService"
+		interface="com.lianpay.tpay.busi.service.ConsumptionThroughOpenAccountService"
+		timeout="30000" check="false" retries="0" />
+	<dubbo:reference id="unionpayQrService"
+		interface="com.lianpay.tpay.core.service.UnionpayQrService" timeout="30000"
+		check="false" retries="0" />
+	<dubbo:reference id="consumptionService"
+		interface="com.lianpay.tpay.core.service.ConsumptionService" timeout="30000"
+		check="false" retries="0" />
+	<dubbo:reference id="refundService1"
+		interface="com.lianpay.tpay.core.service.RefundService" timeout="30000"
+		check="false" retries="0" />
+	<dubbo:reference id="reversalService"
+		interface="com.lianpay.tpay.core.service.ReversalService" timeout="30000"
+		check="false" retries="0" />
+	<dubbo:reference id="attchService"
+		interface="com.lianpay.tpay.core.service.AttchService" timeout="30000"
+		check="false" retries="0" />
+
+</beans>

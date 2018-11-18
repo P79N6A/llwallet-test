@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Default suite">
+	<test name="Default test" preserve-order="true">
+		<classes>
+			<class name="com.llwallet.interfaces.test.api.test.personal.OpenUserTest">
+				<methods>
+					<include name="baseline" />
+				</methods>
+			</class>
+			<class name="com.llwallet.interfaces.test.api.test.custom.ActiveAcctTest">
+				<methods>
+					<include name="baseline" />
+				</methods>
+			</class>
+			<class
+				name="com.llwallet.interfaces.test.api.test.personal.UploadCardPhotoTest">
+				<methods>
+					<include name="baseline" />
+				</methods>
+			</class>
+			<class
+				name="com.llwallet.interfaces.test.api.test.enterprise.OpenSmsUnitUserTest">
+				<methods>
+					<include name="baseline" />
+				</methods>
+			</class>
+			<class
+				name="com.llwallet.interfaces.test.api.test.enterprise.UploadUnitPhotoTest">
+				<methods>
+					<include name="baseline" />
+				</methods>
+			</class>
+			<class
+				name="com.llwallet.interfaces.test.api.test.personal.ModifyUserInfoTest">
+				<methods>
+					<include name="baseline" />
+				</methods>
+			</class>
+			<class
+				name="com.llwallet.interfaces.test.api.test.personal.ModifyBaseUserInfoTest">
+				<methods>
+					<include name="baseline" />
+				</methods>
+			</class>
+			<class
+				name="com.llwallet.interfaces.test.api.test.enterprise.ModifyUnitUserTest">
+				<methods>
+					<include name="baseline" />
+				</methods>
+			</class>
+			<class
+				name="com.llwallet.interfaces.test.api.test.enterprise.ModifyUnitUserAcctTest">
+				<methods>
+					<include name="baseline" />
+				</methods>
+			</class>
+			<class
+				name="com.llwallet.interfaces.test.api.test.personal.ModifyUserMobTest">
+				<methods>
+					<include name="baseline" />
+				</methods>
+			</class>
+			<class
+				name="com.llwallet.interfaces.test.api.test.custom.AccountCancellationTest">
+				<methods>
+					<include name="baseline" />
+				</methods>
+			</class>
+			<class
+				name="com.llwallet.interfaces.test.api.test.personal.BankCardAuthVerfyTest">
+				<methods>
+					<include name="baseline" />
+				</methods>
+			</class>
+			<class
+				name="com.llwallet.interfaces.test.api.test.custom.CashOutCardBindTest">
+				<methods>
+					<include name="baseline" />
+				</methods>
+			</class>
+			<class
+				name="com.llwallet.interfaces.test.api.test.custom.CashOutCardBindThreeElementTest">
+				<methods>
+					<include name="baseline" />
+				</methods>
+			</class>
+			<class
+				name="com.llwallet.interfaces.test.api.test.custom.BankCardBindNoPwdTest">
+				<methods>
+					<include name="baseline" />
+				</methods>
+			</class>
+			<class
+				name="com.llwallet.interfaces.test.api.test.personal.BankCardUnbindTest">
+				<methods>
+					<include name="baseline" />
+				</methods>
+			</class>
+			<class
+				name="com.llwallet.interfaces.test.api.test.personal.BalancePayVerifyTest">
+				<methods>
+					<include name="baseline" />
+				</methods>
+			</class>
+			<class
+				name="com.llwallet.interfaces.test.api.test.personal.BankCardPayTest">
+				<methods>
+					<include name="baseline" />
+				</methods>
+			</class>
+			<class
+				name="com.llwallet.interfaces.test.api.test.other.CombinePayTest">
+				<methods>
+					<include name="baseline" />
+				</methods>
+			</class>
+			<class
+				name="com.llwallet.interfaces.test.api.test.combination.CombinationPayTest">
+				<methods>
+					<include name="baseline" />
+				</methods>
+			</class>
+			<class
+				name="com.llwallet.interfaces.test.api.test.personal.TraderPaymentTest">
+				<methods>
+					<include name="baseline" />
+				</methods>
+			</class>
+
+			<class
+				name="com.llwallet.interfaces.test.api.test.custom.Balance2OtherBankCardTest">
+				<methods>
+					<include name="baseline" />
+				</methods>
+			</class>
+						<class
+				name="com.llwallet.interfaces.test.api.test.custom.Balance2OtherPublicBankCardTest">
+				<methods>
+					<include name="baseline" />
+				</methods>
+			</class>		
+		</classes>
+	</test>
+</suite>

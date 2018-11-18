@@ -1,0 +1,13 @@
+eclipse.preferences.version=1
+encoding//src/main/resources=UTF-8
+encoding//src/test/java=UTF-8
+encoding//src/test/resources/properties/aggregate_sdk_server.properties=UTF-8
+encoding//src/test/resources/properties/combination.properties=UTF-8
+encoding//src/test/resources/properties/datasource.properties=UTF-8
+encoding//src/test/resources/properties/llwallet.properties=UTF-8
+encoding//src/test/resources/properties/llwallet_custom.properties=UTF-8
+encoding//src/test/resources/properties/llwallet_enterprise.properties=UTF-8
+encoding//src/test/resources/properties/llwallet_personal.properties=UTF-8
+encoding//src/test/resources/properties/llwalletactive.properties=UTF-8
+encoding//src/test/resources/properties/spay.properties=UTF-8
+encoding/<project>=UTF-8
